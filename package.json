@@ -1,0 +1,45 @@
+{
+  "name": "validatehtml",
+  "version": "0.1.0",
+  "description": "Validate HTML, CSS, JSON, XML and accessibility from the terminal or an AI coding agent (CLI + MCP server).",
+  "keywords": [
+    "html",
+    "validator",
+    "css",
+    "accessibility",
+    "wcag",
+    "mcp",
+    "model-context-protocol",
+    "cli",
+    "ai-agents"
+  ],
+  "homepage": "https://validatehtml.com/html-validation-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theodcrx/validatehtml-cli.git"
+  },
+  "bugs": "https://github.com/theodcrx/validatehtml-cli/issues",
+  "license": "MIT",
+  "author": "LABELENA",
+  "type": "module",
+  "mcpName": "io.github.theodcrx/validatehtml",
+  "bin": {
+    "validatehtml": "bin/validatehtml.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^4.6.7"
+  }
+}

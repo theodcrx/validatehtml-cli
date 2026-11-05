@@ -1,0 +1,19 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theodcrx/validatehtml",
+  "description": "Validate HTML, CSS, JSON, XML and WCAG accessibility from an AI coding agent. No key needed.",
+  "repository": { "url": "https://github.com/theodcrx/validatehtml-cli", "source": "github" },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "validatehtml",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "packageArguments": [{ "type": "positional", "value": "mcp" }],
+      "environmentVariables": [
+        { "name": "VALIDATEHTML_API_KEY", "description": "Optional. Only audit_page needs it. 100 free calls a month.", "isRequired": false, "isSecret": true }
+      ]
+    }
+  ]
+}
